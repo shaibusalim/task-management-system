@@ -1,0 +1,98 @@
+/* General Styles for Task List */
+.task-list-container {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+  }
+  
+  /* No Tasks Message */
+  .no-tasks {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    font-style: italic;
+    margin-top: 20px;
+  }
+  
+  /* Task List */
+  .task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .task-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .task-item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Task Title and Description */
+  .task-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .task-description {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .task-status {
+    font-size: 14px;
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Task Action Buttons */
+  .task-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .task-buttons button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .task-buttons button.update {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  .task-buttons button.update:hover {
+    background-color: #218838;
+  }
+  
+  .task-buttons button.delete {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .task-buttons button.delete:hover {
+    background-color: #c82333;
+  }
+  
